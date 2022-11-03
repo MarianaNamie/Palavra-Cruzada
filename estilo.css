@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: solid 3px green;
+}
+
+.container h1{
+    border: solid 2px fuchsia;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.caixa p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0%;
+}
+
+.caixa .dica {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0%;
+}
+
+.caixa input {
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.caixa button {
+    border-radius: 5px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.tudo {
+    display: flex;
+    justify-content: space-around;
+    border: solid 3px khaki;
+    margin-bottom: 50px;
+}
+
+.container .caixas {
+    display: flex;
+    border: solid 2px gold;
+}
+
+.container .caixa {
+    border: solid 2px maroon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.linha{
+    height: 100%;
+    border-right: 1px solid black;
+    align-self: center;
+}
+
+/* PALAVRA CRUZADA */
+
+.jogo {
+    border: 3px solid black;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 60px 0px 60px 0px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.letra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+}
+
+#num {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+}
+
+.palavras {
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: black;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#dark {
+    background-color: black;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    color: white;
+}
+
+.footer .texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.footer p{
+    margin: 0%;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer .dev{
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

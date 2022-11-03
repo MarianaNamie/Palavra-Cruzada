@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra Cruzada</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Noto+Sans:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>PALAVRA CRUZADA</h1>
+        <div class="tudo">
+            <div class="caixas">
+                <!-- <p>Digite as respostas sem espaço</p> -->
+                <div class="caixa">
+                    <div class="quest1">
+                        <p>1. Questão, questão, questão?</p>
+                        <p class="dica">Dica: R__</p>
+                        <input type="text" id="inp_rom"> 
+                        <button onclick="verificar_q1()">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest2">
+                        <p>2. Questão, questão, questão?</p>
+                        <p class="dica">Dica: D___ C___</p>
+                        <input type="text" id="inp_dualCore"> 
+                        <button onclick="verificar_q2()">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest3">
+                        <p>3. Questão, questão, questão?</p>
+                        <p class="dica">Dica: R____________</p>
+                        <input type="text" id="inp_registradores"> 
+                        <button onclick="verificar_q3()">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest4">
+                        <p>4. Questão, questão, questão?</p>
+                        <p class="dica">Dica: Q___ C___</p>
+                        <input type="text" id="inp_quadCore"> 
+                        <button onclick="verificar_q4()">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest5">
+                        <p>5. Questão, questão, questão?</p>
+                        <p class="dica">Dica: R__</p>
+                        <input type="text" id="inp_ram"> 
+                        <button onclick="verificar_q5()">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest6">
+                        <p>6. Questão, questão, questão?</p>
+                        <p class="dica">Dica: T______</p>
+                        <input type="text" id="inp_threads"> 
+                        <button onclick="verificar_q6()">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest7">
+                        <p>7. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest8">
+                        <p>8. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest9">
+                        <p>9. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+                </div>
+
+                <div class="linha"></div>
+
+                <div class="caixa">
+                    <div class="quest10">
+                        <p>10. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest11">
+                        <p>11. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest12">
+                        <p>12. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest13">
+                        <p>13. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest14">
+                        <p>14. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest15">
+                        <p>15. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest16">
+                        <p>16. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest17">
+                        <p>17. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+
+                    <div class="quest18">
+                        <p>18. Questão, questão, questão?</p>
+                        <p class="dica">Dica:</p>
+                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="jogo">
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">1</div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">2</div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="romR"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="dual_coreD"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">3</div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="romO"></div>
+                    <div class="letra" id="num">4</div>
+                    <div class="letra palavras" id="quad_coreQ"></div>
+                    <div class="letra palavras" id="dual_coreU"></div>
+                    <div class="letra palavras" id="quad_coreA"></div>
+                    <div class="letra palavras" id="quad_coreD"></div>
+                    <div class="letra palavras" id="dark"></div>
+                    <div class="letra palavras" id="quad_coreC"></div>
+                    <div class="letra palavras" id="quad_coreO"></div>
+                    <div class="letra palavras" id="quad_coreR"></div>
+                    <div class="letra palavras" id="quad_coreE"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">5</div>
+                    <div class="letra palavras" id="registradoresR1"></div>
+                    <div class="letra palavras" id="ramA"></div>
+                    <div class="letra palavras" id="romM"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">6</div>
+                    <div class="letra palavras" id="dual_coreA"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresE1"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="threadsT"></div>
+                    <div class="letra palavras" id="dual_coreL"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">7</div>
+                    <div class="letra" id="num">8</div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresG"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="threadsH"></div>
+                    <div class="letra palavras" id="dark"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">9</div>
+                    <div class="letra palavras" id="cpuC cacheC"></div>
+                    <div class="letra palavras" id="cacheA adress_busA"></div>
+                    <div class="letra palavras" id="cacheC"></div>
+                    <div class="letra palavras" id="cacheH"></div>
+                    <div class="letra palavras" id="cacheE"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">10</div>
+                    <div class="letra palavras" id="registradoresI"></div>
+                    <div class="letra palavras" id="i77"></div>
+                    <div class="letra" id="num">11</div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="threadsR"></div>
+                    <div class="letra palavras" id="dual_coreC"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="cpuP"></div>
+                    <div class="letra palavras" id="adress_busD"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresS1"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="ulaU"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="threadsE"></div>
+                    <div class="letra palavras" id="dual_coreO"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="cpuU"></div>
+                    <div class="letra palavras" id="adress_bussR"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">12</div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresT"></div>
+                    <div class="letra" id="num">13</div>
+                    <div class="letra palavras" id="ulaL"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="threadsA"></div>
+                    <div class="letra palavras" id="dual_coreR"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="adress_busE"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra" id="num">14</div>
+                    <div class="letra palavras">M</div>
+                    <div class="letra palavras">E</div>
+                    <div class="letra palavras">M</div>
+                    <div class="letra palavras">Ó</div>
+                    <div class="letra palavras">R</div>
+                    <div class="letra palavras">I</div>
+                    <div class="letra palavras">A</div>
+                    <div class="letra palavras" id="dark"></div>
+                    <div class="letra palavras">D</div>
+                    <div class="letra palavras">E</div>
+                    <div class="letra palavras" id="dark"></div>
+                    <div class="letra palavras">M</div>
+                    <div class="letra palavras">A</div>
+                    <div class="letra palavras">S</div>
+                    <div class="letra palavras">S</div>
+                    <div class="letra palavras">A</div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="epromP"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresA"></div>
+                    <div class="letra palavras" id="i55"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="threadsS"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="adress_busS"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="epromR"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresD"></div>
+                    <div class="letras"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="dark"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="epromO"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresO"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">15</div>
+                    <div class="letra palavras" id="data_busD"></div>
+                    <div class="letra palavras" id="data_busA"></div>
+                    <div class="letra palavras" id="data_busT"></div>
+                    <div class="letra palavras" id="data_busA"></div>
+                    <div class="letra palavras" id="dark"></div>
+                    <div class="letra palavras" id="data_busB"></div>
+                    <div class="letra palavras" id="data_busU"></div>
+                    <div class="letra palavras" id="data_busS"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra" id="num">16</div>
+                    <div class="letra palavras" id="dmaD"></div>
+                    <div class="letra palavras" id="dmaM"></div>
+                    <div class="letra palavras" id="dmaA"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresR2"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="adress_busU"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra palavras" id="registradoresE2"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">17</div>
+                    <div class="letra palavras" id="flashF"></div>
+                    <div class="letra palavras" id="flashL"></div>
+                    <div class="letra palavras" id="flashA"></div>
+                    <div class="letra palavras" id="flashS"></div>
+                    <div class="letra palavras" id="flashH"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+                <div class="coluna">
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra" id="num">18</div>
+                    <div class="letra palavras" id="csC"></div>
+                    <div class="letra palavras" id="registradoresS2"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                    <div class="letra"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="texto">
+            <p class="dev">Developed by</p>
+            <p>Mariana Namie, Mateus Joaquim, Paula Maria</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="palavra-cruzada.js"></script>
