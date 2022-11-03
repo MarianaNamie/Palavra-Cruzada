@@ -9,11 +9,11 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    border: solid 3px green;
+    /* border: solid 3px green; */
 }
 
 .container h1{
-    border: solid 2px fuchsia;
+    /* border: solid 2px fuchsia; */
     font-family: 'Noto Sans', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -52,17 +52,17 @@ body {
 .tudo {
     display: flex;
     justify-content: space-around;
-    border: solid 3px khaki;
+    /* border: solid 3px khaki; */
     margin-bottom: 50px;
 }
 
 .container .caixas {
     display: flex;
-    border: solid 2px gold;
+    /* border: solid 2px gold; */
 }
 
 .container .caixa {
-    border: solid 2px maroon;
+    /* border: solid 2px maroon; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +73,13 @@ body {
     height: 100%;
     border-right: 1px solid black;
     align-self: center;
+}
+
+.caixa .resposta {
+    margin: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* PALAVRA CRUZADA */

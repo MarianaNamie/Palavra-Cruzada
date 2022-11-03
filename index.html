@@ -67,20 +67,23 @@
 
                     <div class="quest7">
                         <p>7. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: C__</p>
+                        <input type="text" id="inp_cpu"> 
+                        <button onclick="verificar_q7()">VERIFICAR</button>
                     </div>
 
                     <div class="quest8">
                         <p>8. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: A____ B__</p>
+                        <input type="text" id="inp_adressBus"> 
+                        <button onclick="verificar_q8()">VERIFICAR</button>
                     </div>
 
                     <div class="quest9">
                         <p>9. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: C____</p>
+                        <input type="text" id="inp_cache"> 
+                        <button onclick="verificar_q9()">VERIFICAR</button>
                     </div>
                 </div>
 
@@ -89,56 +92,60 @@
                 <div class="caixa">
                     <div class="quest10">
                         <p>10. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: I_</p>
+                        <input type="text" id="inp_i7"> 
+                        <button onclick="verificar_q10()">VERIFICAR</button>
                     </div>
 
                     <div class="quest11">
                         <p>11. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: U__</p>
+                        <input type="text" id="inp_ula"> 
+                        <button onclick="verificar_q11()">VERIFICAR</button>
                     </div>
 
                     <div class="quest12">
                         <p>12. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: E____</p>
+                        <input type="text" id="inp_eprom"> 
+                        <button onclick="verificar_q12()">VERIFICAR</button>
                     </div>
 
                     <div class="quest13">
                         <p>13. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: I_</p>
+                        <input type="text" id="inp_i5"> 
+                        <button onclick="verificar_q13()">VERIFICAR</button>
                     </div>
 
                     <div class="quest14">
                         <p>14. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica"> - </p>
+                        <p class="resposta">R: Memória de Massa</p>
                     </div>
 
                     <div class="quest15">
                         <p>15. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: D___ B__</p>
+                        <input type="text" id="inp_dataBus"> <button onclick="verificar_q15()">VERIFICAR</button>
                     </div>
 
                     <div class="quest16">
                         <p>16. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: D__</p>
+                        <input type="text" id="inp_dma"> <button onclick="verificar_q16()">VERIFICAR</button>
                     </div>
 
                     <div class="quest17">
                         <p>17. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: F____</p>
+                        <input type="text" id="inp_flash"> <button onclick="verificar_q17()">VERIFICAR</button>
                     </div>
 
                     <div class="quest18">
                         <p>18. Questão, questão, questão?</p>
-                        <p class="dica">Dica:</p>
-                        <input type="text" id=""> <button onclick="">VERIFICAR</button>
+                        <p class="dica">Dica: C_</p>
+                        <input type="text" id="inp_cs"> <button onclick="verificar_q18()">VERIFICAR</button>
                     </div>
                 </div>
             </div>
@@ -263,8 +270,8 @@
                     <div class="letra"></div>
                     <div class="letra"></div>
                     <div class="letra" id="num">9</div>
-                    <div class="letra palavras" id="cpuC cacheC"></div>
-                    <div class="letra palavras" id="cacheA adress_busA"></div>
+                    <div class="letra palavras" id="cpuC"></div>
+                    <div class="letra palavras" id="adress_busA"></div>
                     <div class="letra palavras" id="cacheC"></div>
                     <div class="letra palavras" id="cacheH"></div>
                     <div class="letra palavras" id="cacheE"></div>
@@ -306,7 +313,7 @@
                     <div class="letra"></div>
                     <div class="letra"></div>
                     <div class="letra palavras" id="cpuU"></div>
-                    <div class="letra palavras" id="adress_bussR"></div>
+                    <div class="letra palavras" id="adress_busR"></div>
                     <div class="letra"></div>
                     <div class="letra"></div>
                     <div class="letra"></div>
@@ -369,7 +376,7 @@
                     <div class="letra"></div>
                     <div class="letra"></div>
                     <div class="letra"></div>
-                    <div class="letra palavras" id="adress_busS"></div>
+                    <div class="letra palavras" id="adress_busS1"></div>
                     <div class="letra"></div>
                     <div class="letra"></div>
                     <div class="letra"></div>
@@ -408,11 +415,11 @@
                     <div class="letra"></div>
                     <div class="letra" id="num">15</div>
                     <div class="letra palavras" id="data_busD"></div>
-                    <div class="letra palavras" id="data_busA"></div>
+                    <div class="letra palavras" id="data_busA1"></div>
                     <div class="letra palavras" id="data_busT"></div>
-                    <div class="letra palavras" id="data_busA"></div>
+                    <div class="letra palavras" id="data_busA2"></div>
                     <div class="letra palavras" id="dark"></div>
-                    <div class="letra palavras" id="data_busB"></div>
+                    <div class="letra palavras" id="adress_busB"></div>
                     <div class="letra palavras" id="data_busU"></div>
                     <div class="letra palavras" id="data_busS"></div>
                     <div class="letra"></div>
@@ -420,7 +427,7 @@
                 <div class="coluna">
                     <div class="letra" id="num">16</div>
                     <div class="letra palavras" id="dmaD"></div>
-                    <div class="letra palavras" id="dmaM"></div>
+                    <div class="letra palavras" id="epromM"></div>
                     <div class="letra palavras" id="dmaA"></div>
                     <div class="letra"></div>
                     <div class="letra palavras" id="registradoresR2"></div>
@@ -454,7 +461,7 @@
                     <div class="letra palavras" id="flashF"></div>
                     <div class="letra palavras" id="flashL"></div>
                     <div class="letra palavras" id="flashA"></div>
-                    <div class="letra palavras" id="flashS"></div>
+                    <div class="letra palavras" id="adress_busS2"></div>
                     <div class="letra palavras" id="flashH"></div>
                     <div class="letra"></div>
                     <div class="letra"></div>

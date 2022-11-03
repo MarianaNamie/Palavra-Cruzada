@@ -72,3 +72,111 @@ function verificar_q6() {
         threadsS.innerHTML = `S`;
     }
 }
+
+function verificar_q7() {
+    var cpu = inp_cpu.value;
+    if (cpu.toUpperCase() == "CPU") {
+        cpuC.innerHTML = `C`;
+        cpuP.innerHTML = `P`;
+        cpuU.innerHTML = `U`;
+    }
+}
+
+function verificar_q8() {
+    var adressBus = inp_adressBus.value;
+    if (adressBus.toUpperCase() == "ADRESS BUS") {
+        adress_busA.innerHTML = `A`;
+        adress_busD.innerHTML = `D`;
+        adress_busR.innerHTML = `R`;
+        adress_busE.innerHTML = `E`;
+        adress_busS1.innerHTML = `S`;
+        adress_busB.innerHTML = `B`;
+        adress_busU.innerHTML = `U`;
+        adress_busS2.innerHTML = `S`;
+    }
+}
+
+function verificar_q9() {
+    var cache = inp_cache.value;
+    if (cache.toUpperCase() == "CACHE") {
+        cpuC.innerHTML = `C`;
+        adress_busA.innerHTML = `A`;
+        cacheC.innerHTML = `C`;
+        cacheH.innerHTML = `H`;
+        cacheE.innerHTML = `E`;
+    }
+}
+
+function verificar_q10() {
+    var i7 = inp_i7.value;
+    if (i7.toUpperCase() == "I7") {
+        registradoresI.innerHTML = `I`;
+        i77.innerHTML = "7";
+    }
+}
+
+function verificar_q11() {
+    var ula = inp_ula.value;
+    if (ula.toUpperCase() == "ULA") {
+        ulaU.innerHTML = `U`;
+        ulaL.innerHTML = "L";
+    }
+}
+
+function verificar_q12() {
+    var eprom = inp_eprom.value;
+    if (eprom.toUpperCase() == "EPROM") {
+        epromP.innerHTML = `P`;
+        epromR.innerHTML = `R`;
+        epromO.innerHTML = `O`;
+        epromM.innerHTML = `M`;
+    }
+}
+
+function verificar_q13() {
+    var i5 = inp_i5.value;
+    if (i5.toUpperCase() == "I5") {
+        i55.innerHTML = `5`;
+    }
+}
+
+function verificar_q15() {
+    var dataBus = inp_dataBus.value;
+    if (dataBus.toUpperCase() == "DATA BUS") {
+        data_busD.innerHTML = `D`;
+        data_busA1.innerHTML = `A`;
+        data_busT.innerHTML = `T`;
+        data_busA2.innerHTML = `A`;
+        adress_busB.innerHTML = `B`
+        data_busU.innerHTML = `U`;
+        data_busS.innerHTML = `S`;
+    }
+}
+
+function verificar_q16() {
+    var dma = inp_dma.value;
+    if (dma.toUpperCase() == "DMA") {
+        dmaD.innerHTML = `D`;
+        epromM.innerHTML = `M`;
+        dmaA.innerHTML = `A`;
+    }
+}
+
+function verificar_q17() {
+    var flash = inp_flash.value;
+    if (flash.toUpperCase() == "FLASH") {
+        flashF.innerHTML = `F`;
+        flashL.innerHTML = `L`;
+        flashA.innerHTML = `A`;
+        adress_busS2.innerHTML = `S`;
+        flashH.innerHTML = `H`;
+    }
+}
+
+function verificar_q18() {
+    var cs = inp_cs.value;
+    if (cs.toUpperCase() == "CS") {
+        csC.innerHTML = `C`;
+        registradoresS2.innerHTML = `S`;
+    }
+}
