@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "C-33 Andvari / LAST ORIGIN\n\nMP4 format 3840*2160, 16:9 version\n\nhttps://www.pixiv.net/artworks/84120766\n\nDonation link\nhttps://patreon.com/aduare\nhttps://fanbox.cc/@aduare",
+	"file" : "Andvari3840 2160.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Pixel art" ],
+	"title" : "Andvari",
+	"type" : "video",
+	"version" : 0,
+	"visibility" : "public"
+}
