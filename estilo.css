@@ -81,6 +81,10 @@ body {
     width: 85px;
 }
 
+.quest {
+    width: 300px;
+}
+
 .tudo {
     position: relative;
     z-index: 1;
