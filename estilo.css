@@ -124,6 +124,10 @@ body {
     font-weight: 500;
 }
 
+#inp_memoriaDeMassa {
+    border: solid 2px lightgreen;
+}
+
 /* PALAVRA CRUZADA */
 
 .jogo {
